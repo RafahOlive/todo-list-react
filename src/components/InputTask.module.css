@@ -1,0 +1,36 @@
+.formTask{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: 736px;
+    height: 54px;
+    left: calc(50% - 736px/2);
+    top: 173px;
+}
+
+.formTask textarea{
+    background: var(--gray-500);
+    resize: none;
+
+    border: 0;
+    border-radius: 5px;
+
+    width: 638px;
+    height: 54px;
+}
+
+.formTask button{
+    background: var(--blue-dark);
+    width: 90px;
+    height: 52px;
+
+    border-radius: 8px;
+
+    border: 0;
+
+    color: var(--gray-100)
+}
+

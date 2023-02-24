@@ -1,0 +1,10 @@
+.header{
+    height: 200px;
+    background: var(--gray-700);
+}
+
+.headerLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
