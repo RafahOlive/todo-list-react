@@ -1,5 +1,9 @@
-export function Task() {
+interface taskProps {
+    content: string;
+}
+
+export function Task({content}: taskProps) {
     return(
-        <h1>Tasks</h1>
+        <h1>{content}</h1>
     )
 }

@@ -1,30 +1,50 @@
-import { useState } from 'react'
+import { ChangeEvent, FormEvent, useState } from 'react'
 import styles from './InputTask.module.css'
 import { Task } from './Task'
 
 export function InputTask() {
 
     const [tasks, setTasks] = useState<string[]>([
-        'task 1',
-        'task 2',
-        'task 3',
-        'task 4',
+        'task 1'
     ])
 
+    const [newTaskText, setNewTaskText] = useState('');
+
+
+    function handleCreateNewTask(event: FormEvent) {
+        event.preventDefault();
+        setTasks([...tasks, newTaskText]);
+    }
+
+    function handleNewTaskChange(event: ChangeEvent<HTMLTextAreaElement>) {
+        setNewTaskText(event.target.value);
+    }
 
     return (
-        <>
-            <form className={styles.formTask}>
-                <textarea placeholder="Adicione uma nova tarefa"></textarea>
+        <div>
+
+            <form
+                onSubmit={handleCreateNewTask}
+                className={styles.formTask}>
+
+                <textarea
+                    placeholder="Adicione uma nova tarefa"
+                    onChange={handleNewTaskChange}
+                >
+                </textarea>
+
                 <button type='submit'> Criar </button>
+
             </form>
 
             <div>
-                { tasks.map(tsk => {
-                    return <Task />
+                {tasks.map(tasksReturn => {
+                    return <Task
+                        content={tasksReturn}
+                    />
                 })}
             </div>
-        </>
+        </div>
 
     )
 
