@@ -5,7 +5,7 @@ import { Task } from './Task'
 export function InputTask() {
 
     const [tasks, setTasks] = useState<string[]>([
-        'task 1'
+
     ])
 
     const [newTaskText, setNewTaskText] = useState('');
@@ -21,7 +21,7 @@ export function InputTask() {
     }
 
     return (
-        <div>
+        <div className={styles.mainTask}>
 
             <form
                 onSubmit={handleCreateNewTask}
@@ -37,12 +37,21 @@ export function InputTask() {
 
             </form>
 
-            <div>
-                {tasks.map(tasksReturn => {
-                    return <Task
-                        content={tasksReturn}
-                    />
-                })}
+            <div className={styles.mainContentTask}>
+
+                <div className={styles.headerTask}>
+                    <p className={styles.createdTasks}>Tarefas criadas</p>
+                    <p className={styles.doneTasks}>Concluidas</p>
+                </div>
+
+                <div className={styles.contentTask}>
+                    {tasks.map(tasksReturn => {
+                        return <Task
+                            content={tasksReturn}
+                        />
+                    })}
+                </div>
+
             </div>
         </div>
 

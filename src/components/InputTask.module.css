@@ -1,3 +1,20 @@
+.mainTask{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding-top: 91px;
+}
+
+.headerTask{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-top: 12px;
+    margin-bottom: 40px;
+}
+
 .formTask{
     display: flex;
     justify-content: center;
@@ -33,4 +50,34 @@
 
     color: var(--gray-100)
 }
+
+.createdTasks{
+    width: 106px;
+    height: 17px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: var(--blue);
+
+}
+
+.doneTasks{
+    width: 78px;
+    height: 17px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: var(--purple);
+
+}
+
+
 

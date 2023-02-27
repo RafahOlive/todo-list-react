@@ -1,0 +1,28 @@
+.taskMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 736px;
+    height: 72px;
+
+    border: 1px solid var(--gray-500);
+    border-radius: 8px;
+}
+
+.taskCheckbox {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid var(--blue);
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.taskCheckbox:checked {
+    background-color: var(--purple);
+}
