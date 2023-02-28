@@ -1,15 +1,25 @@
 .mainTask{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
     padding-top: 91px;
+}
+
+.mainContentTask{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .headerTask{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+
+    width: 736px;
 
     padding-top: 12px;
     margin-bottom: 40px;
@@ -37,6 +47,13 @@
 
     width: 638px;
     height: 54px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--gray-100);
 }
 
 .formTask button{
@@ -48,13 +65,14 @@
 
     border: 0;
 
-    color: var(--gray-100)
+    color: var(--gray-100);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .createdTasks{
-    width: 106px;
-    height: 17px;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -62,13 +80,9 @@
     line-height: 17px;
 
     color: var(--blue);
-
 }
 
 .doneTasks{
-    width: 78px;
-    height: 17px;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -76,7 +90,6 @@
     line-height: 17px;
 
     color: var(--purple);
-
 }
 
 

@@ -1,4 +1,7 @@
 import { ChangeEvent, FormEvent, useState } from 'react'
+import { PlusCircle } from "phosphor-react";
+
+
 import styles from './InputTask.module.css'
 import { Task } from './Task'
 
@@ -33,15 +36,22 @@ export function InputTask() {
                 >
                 </textarea>
 
-                <button type='submit'> Criar </button>
+                <button type='submit'> Criar <PlusCircle /> </button>
 
             </form>
 
             <div className={styles.mainContentTask}>
 
                 <div className={styles.headerTask}>
-                    <p className={styles.createdTasks}>Tarefas criadas</p>
-                    <p className={styles.doneTasks}>Concluidas</p>
+                    <div>
+                        <p className={styles.createdTasks}>Tarefas criadas</p>
+                        <p>0</p>
+                    </div>
+
+                    <div>
+                        <p className={styles.doneTasks}>Concluidas</p>
+                        <p>0</p>
+                    </div>
                 </div>
 
                 <div className={styles.contentTask}>

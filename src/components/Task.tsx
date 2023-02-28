@@ -10,7 +10,10 @@ export function Task({ content }: taskProps) {
         <div className={styles.taskMain}>
             <input type="checkbox" className={styles.taskCheckbox} />
             {content}
-            <Trash />
+            <button>
+                <Trash size={24} />
+            </button>
+
         </div>
     )
 }

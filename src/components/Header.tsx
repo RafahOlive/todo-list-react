@@ -4,7 +4,7 @@ import logo from '../assets/Logo.svg'
 export function Header() {
     return (
         <div className={styles.header}>
-            <div className={styles.headerLogo}>
+            <div>
                 <img src={logo} alt="" />
             </div>
         </div>
