@@ -73,7 +73,7 @@ export function InputTask() {
                     {tasks.map(tasksReturn => {
                         return (
                             <Task
-                                key={id}
+                                key={tasksReturn}
                                 content={tasksReturn}
                                 onDeleteTask={deleteTask}
                             />
