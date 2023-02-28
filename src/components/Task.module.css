@@ -17,6 +17,8 @@
     border: 0;
 
     color: var(--gray-300);
+
+    cursor: pointer;
 }
 
 .taskCheckbox {

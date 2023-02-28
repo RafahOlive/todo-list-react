@@ -57,6 +57,12 @@
 }
 
 .formTask button{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+
     background: var(--blue-dark);
     width: 90px;
     height: 52px;
@@ -72,6 +78,10 @@
     justify-content: center;
 }
 
+.tasksBox{
+    display: flex;
+}
+
 .createdTasks{
     font-family: 'Inter';
     font-style: normal;
@@ -80,6 +90,8 @@
     line-height: 17px;
 
     color: var(--blue);
+
+    margin-right: 8px;
 }
 
 .doneTasks{
@@ -90,6 +102,28 @@
     line-height: 17px;
 
     color: var(--purple);
+
+    margin-right: 8px;
+}
+
+.tasksCounter{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+
+    width: 25px;
+    height: 19px;
+
+    background: var(--gray-400);
+
+    border-radius: 999px ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 
