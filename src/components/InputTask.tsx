@@ -5,9 +5,10 @@ import styles from './InputTask.module.css'
 import { Task } from './Task'
 
 export function InputTask() {
+    const [taskCount, setTaskCount] = useState(0);
 
     const [tasks, setTasks] = useState<string[]>([
-        'Arrumar a cama',
+
     ]);
 
     const [newTaskText, setNewTaskText] = useState('');
@@ -17,6 +18,8 @@ export function InputTask() {
         event.preventDefault();
         setTasks([...tasks, newTaskText]);
         setNewTaskText('');
+
+        setTaskCount(taskCount + 1);
     }
 
     function handleNewTaskChange(event: ChangeEvent<HTMLTextAreaElement>) {
@@ -33,6 +36,7 @@ export function InputTask() {
             return task !== taskToDelete;
         })
         setTasks(tasksWithoutDeletedOne);
+        setTaskCount(taskCount - 1);
     }
 
     return (
@@ -60,7 +64,7 @@ export function InputTask() {
                 <div className={styles.headerTask}>
                     <div className={styles.tasksBox}>
                         <p className={styles.createdTasks}>Tarefas criadas</p>
-                        <p className={styles.tasksCounter}>0</p>
+                        <p className={styles.tasksCounter}>{taskCount}</p>
                     </div>
 
                     <div className={styles.tasksBox}>
