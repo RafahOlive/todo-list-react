@@ -1,4 +1,4 @@
-.mainTask{
+.mainTask {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,14 +6,14 @@
     padding-top: 91px;
 }
 
-.mainContentTask{
+.mainContentTask {
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
 
-.headerTask{
+.headerTask {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -25,10 +25,9 @@
     margin-bottom: 40px;
 }
 
-.formTask{
+.formTask {
     display: flex;
     justify-content: center;
-    padding: 0px;
     gap: 8px;
 
     position: absolute;
@@ -38,7 +37,7 @@
     top: 173px;
 }
 
-.formTask textarea{
+.formTask textarea {
     background: var(--gray-500);
     resize: none;
 
@@ -56,7 +55,7 @@
     color: var(--gray-100);
 }
 
-.formTask button{
+.formTask button {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -78,11 +77,11 @@
     justify-content: center;
 }
 
-.tasksBox{
+.tasksBox {
     display: flex;
 }
 
-.createdTasks{
+.createdTasks {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -94,7 +93,7 @@
     margin-right: 8px;
 }
 
-.doneTasks{
+.doneTasks {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -106,7 +105,7 @@
     margin-right: 8px;
 }
 
-.tasksCounter{
+.tasksCounter {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -118,7 +117,7 @@
 
     background: var(--gray-400);
 
-    border-radius: 999px ;
+    border-radius: 999px;
 
     display: flex;
     justify-content: center;
@@ -126,5 +125,21 @@
 
 }
 
+@media screen and (max-width: 641px) {
+
+    .headerTask {
+        width: auto;
+    }
+
+    .formTask textarea {
+        width: auto;
+    }
 
 
+    .headerTask {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+}
